@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset="'UTF-8"
+  meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JavaScript Guide</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+</head>
+<body>
+  <class= header>
+    <h1>A Comprehensive Guide to JavaScript</h1>
+  </header>
+
+  <main class="content">
+    <h2>What is JavaScript?</h2>
+    <p>When I was first interested in learning how to code, I found most online courses were only teaching Java and JavaScript. I had only heard bad things about the two, specifically JavaScript. All the best languages were Python and C++, and I jumped into some game development videos without knowing a single thing about coding- I do not recommend this. <a href="code.html" class="quote-link">But I just want to code!</a> </p>
+    <p>JavaScript can be used for many things like apps and games, but its primary usage is for websites. All browsers can run it and it integrates well with CSS and HTML, which are both fundamental to web development.</p>
+    <p>There is beauty in simplicity- JavaScript is a straightforward and ridgid language but extremely versatile and flexible. The possibilities are endless and it is a great language to start with.</p>
+    <p>Imagine a cake- my favorite is chantilly so that's the cake I will draw.</p>
+    <img src="images/chantillly-cake.png" alt="Chantilly Cake" class="cake-image" />
+    
+    <p class="para-first">
+      JavaScript is the third layer in this very delicious looking cake. It sits below <a href="htmlGuide.html">HTML</a> and <a href="cssGuide.html">CSS</a>. My first website was entirely created on <a href="neocities.org">Neocities</a> using only HTML and CSS. It worked, but there wasn't much functionality until JavaScript was introduced. However, I strongly recommend you learn both HTML and CSS before learning JavaScript. Remember, it is the third layer in the cake!</p>
+    
+    <p class="para-second">
+      If we were to create a door, we could draw a box and a circle for the door knob.</p>
+    
+      <figure>
+      <img src="images/door1.png" alt="Empty door" class="door1" />
+      <figcaption>This is essentially the HTML, creating a basic structure. We are kind of like our own gods, putting something into existence.</figcaption>
+    </figure>
+    
+    <p class="after-caption">
+      Now let's paint it.</p>
+    <figure>
+      <img src="images/door2.png" alt="Painted Door" class="door2" />
+      <figcaption>This is the CSS. It makes the door look a bit nicer.</figcaption>
+    </figure>
+
+    <p class="para-last">
+      So now we have a door, but that's all we have! It serves no purpose. We were able to create it and make it look pretty, but it doesn't do much else. This is where JavaScript comes in handy. Try clicking on the door.</p>
+
+    <img id="door" src="images/closed-door.png" alt="A closed door">
+    <p id="doorCaption">JavaScript allows us to create dynamic behavior and give us FUNCTIONALITY!</p>
+
+    <audio id="doorSound" src="audio/door-creak.mp3"></audio>
+
+    <script>
+      const door = document.getElementById("door");
+      const sound = document.getElementById("doorSound")
+
+      let isOpen = false;
+
+      door.addEventListener("click", function () {
+        sound.currentTime = 0;
+        sound.play();
+
+        if (isOpen) {
+          door.src = "images/closed-door.png";
+          door.alt = "Closed door";
+        } else {
+          door.src = "images/doorOpen.png";
+          door.alt = "Open door";
+        }
+        
+        isOpen = !isOpen;
+        
+      });
+    </script>
+
+  </main>
+
+  <a href = "serverPage.html" id="linkNextPage"> Next &#10132;</a>
+
+</body>

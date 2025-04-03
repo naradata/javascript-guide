@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  padding: 2rem;
+  text-align: center;
+  font-family: "Garamond", serif;
+  background-color: #e7e7e7;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+main {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.content {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.quote-link {
+  color:#0032ff;
+  font-weight: bold;
+}
+
+.cake-image {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+}
+
+.para-first {
+  margin-top: 2.5rem;
+}
+
+.para-second {
+  margin-top: 3rem;
+}
+
+.after-caption {
+  margin-top: 3rem;
+}
+
+.door1 {
+  width: 100%;
+  max-width: 225px;
+  height: auto;
+}
+
+.door2 {
+  width: 100%;
+  max-width: 242px;
+  height: auto;
+  left: 8px;
+}
+
+figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  font-style: italic;
+}
+
+.para-last {
+  margin-top: 3rem;
+}
+
+#door {
+  width: 240px;
+  height: 235px;
+  object-fit: cover;
+  display: block;
+  margin: 2rem auto;
+  cursor: pointer;
+}
+
+/*server page*/
+ #linkNextPage {
+  position:fixed;
+  text-decoration: none;
+  bottom: 20px;
+  right: 70px;
+  font-size: 1rem;
+ }
+
+
+/*quote box for quote page*/
+.quote-box {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border: 6px solid #0032ff;
+  padding: 2rem;
+  max-width: 600px;
+  text-align: center;
+  border-radius: 0;
+  background-color: #e7e7e7;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  font-size: 1.05rem;
+}
+
+.learn-link {
+  color:#0032ff;
+  font-weight: bold;
+}
